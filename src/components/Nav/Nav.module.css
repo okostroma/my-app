@@ -1,0 +1,8 @@
+.nav {
+    grid-area: nav;
+    background-color: aquamarine;
+    padding-left: 5px;
+}
+.item {
+    color: darkcyan;
+}

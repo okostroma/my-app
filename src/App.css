@@ -9,32 +9,7 @@
   grid-template-columns: 2fr 10fr;
   gap: 10px;
 }
-.header {
-grid-area: header;
-  background-color: aquamarine;
-}
 
-.nav {
-grid-area: nav;
-  background-color: aquamarine;
-}
 
-.content {
-grid-area: content;
-  background-color: beige;
-}
-.logo {
-  width: 50px;
-  height: 50px;
-  margin: 4px 0 0 4px;
-}
 
-.main-pic {
-  height: 250px;
-  width: 100%;
-}
 
-.avatar {
-  width: 100px;
-  height: 100px;
-}
