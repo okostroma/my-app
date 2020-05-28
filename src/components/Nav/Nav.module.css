@@ -1,8 +1,38 @@
 .nav {
     grid-area: nav;
-    background-color: aquamarine;
-    padding-left: 5px;
+    background-color: #000;
+    padding: 10px;
 }
-.item {
-    color: darkcyan;
+
+
+.item a{
+    color: #faebd7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.item a.active {
+    color: #a48b8b;
+}
+
+.friends {
+    margin-top: 50px;
+}
+
+.friends a{
+    text-decoration: none;
+    color: #faebd7;
+    font-size: 30px;
+}
+
+.itemUsers {
+    margin-top: 30px;
+
+}
+
+.itemUsers a{
+    text-decoration: none;
+    color:#faebd7 ;
+    cursor: pointer;
+    font-size: 22px;
 }

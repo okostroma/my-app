@@ -1,16 +1,9 @@
 .content {
     grid-area: content;
-    background-color: beige;
+    background-color: #fff;
 }
 
 
-.mainPic {
-    height: 250px;
-    width: 100%;
-}
 
-.avatar {
-    width: 100px;
-    height: 100px;
-}
+
 

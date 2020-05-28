@@ -1,0 +1,28 @@
+.avaMessage {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: indianred;
+    /*position: relative;*/
+    margin-left: 3px;
+}
+
+.name {
+    color: antiquewhite;
+    /*margin-right: 9px;*/
+}
+
+
+
+/*.friendItem{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+
+}

@@ -1,0 +1,83 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding: 10px;
+}
+
+.dialogItem .active {
+  color: darksalmon;
+
+}
+.dialogItem {
+    border-right: 1px solid rgba(255, 0, 0, 0.1);
+
+}
+
+.dialogCol a {
+    color: darkcyan;
+    text-decoration: none;
+
+}
+
+.dialogCol {
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+
+}
+.dialog {
+    margin-top: 10px;
+}
+
+.messages{
+     margin-left: 50px;
+
+}
+
+.message{
+
+}
+
+.avaMessage {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: indianred;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+}
+
+.rightItem.avaMessage{
+    position: absolute;
+    right: 240px;
+
+
+
+}
+.rightItem.messageText {
+    position: relative;
+    right: -450px;
+    top: 25px;
+
+
+}
+
+.textArea {
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.btn {
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 10px;
+}
+
+.text {
+    resize: none;
+    width: 80%;
+    height: 50px;
+}

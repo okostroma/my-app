@@ -1,0 +1,14 @@
+
+.avatar {
+    width: 100px;
+    height: 100px;
+}
+.info {
+    margin: 10px;
+}
+
+.mainPic {
+    height: 250px;
+    width: 100%;
+    background-image: url("Peony.jpg");
+}

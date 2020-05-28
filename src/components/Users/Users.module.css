@@ -1,0 +1,31 @@
+
+.avaMessage {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: indianred;
+    position: relative;
+}
+.usersPage {
+    padding: 0 40px;
+}
+.users{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.userBlock {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.userBlockBody {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: #000 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+}
