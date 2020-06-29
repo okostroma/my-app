@@ -6,6 +6,7 @@ import {
     addMessageActionCreator,
     addSendMessageActionCreator,
 } from "../../redux/dialogsReducer";
+import {Redirect} from "react-router-dom";
 
 
 
@@ -33,6 +34,8 @@ const Dialogs = (props) => {
     let messageElements = props.dialogsReducer.messages.map(message=> {
 
         return <Message key={message.id} message = {message.message} />})
+
+    if(!props.isAuth) return <Redirect to='/login'/>
 
     return (
         <div className={classes.dialogs}>

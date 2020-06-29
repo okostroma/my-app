@@ -2,6 +2,7 @@
     grid-area: nav;
     background-color: #000;
     padding: 10px;
+    /*cursor: pointer;*/
 }
 
 
@@ -13,6 +14,7 @@
 
 .item a.active {
     color: #a48b8b;
+    cursor: pointer;
 }
 
 .friends {

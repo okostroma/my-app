@@ -5,10 +5,27 @@
 }
 .info {
     margin: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .mainPic {
     height: 250px;
     width: 100%;
     background-image: url("Peony.jpg");
+}
+
+
+.job {
+    width: 20px;
+    height: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileInfo {
+    margin-left: 10px;
 }
