@@ -3,7 +3,7 @@ import classes from './ProfileInfo.module.css'
 import PreLoader from "../Preloader/PreLoader";
 import done from './done.png'
 import undone from './undone.jpg';
-import * as axios from "axios";
+
 
 class ProfileInfo extends React.Component {
 

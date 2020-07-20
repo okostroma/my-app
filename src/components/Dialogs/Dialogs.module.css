@@ -71,8 +71,8 @@
 }
 
 .btn {
-    position: absolute;
-    bottom: 0px;
+    /*position: absolute;*/
+    /*bottom: 10px;*/
     padding: 5px 10px;
 }
 

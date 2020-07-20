@@ -2,9 +2,7 @@ import React from "react";
 import classes from './Users.module.css'
 import userPhoto from '../../assets/img/user.png'
 import {NavLink} from "react-router-dom";
-import * as axios from "axios";
-import {usersAPI} from "../../api/api";
-import {toggleFollowing} from "../../redux/usersReducer";
+
 
 
 let Users = (props) => {
@@ -14,28 +12,9 @@ let Users = (props) => {
         pages.push(i)
     }
 
-    // const followUser = () => {
-    //     axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.users.id}`, {}, {withCredentials: true,
-    //         headers: {'API-KEY': '42e5fb1f-f067-4545-a7f8-f1dc74f3a1ae'}}).then(response => {
-    //         if(response.data.resultCode === 0) {
-    //             props.follow(props.users.id)
-    //         }
-    //     })
-    // }
-    //
-    // const unfollowUser = () => {
-    //     axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.users.id}`,
-    //         {withCredentials: true,
-    //             headers: {'API-KEY': '42e5fb1f-f067-4545-a7f8-f1dc74f3a1ae'}}).then(response => {
-    //         if(response.data.resultCode === 0) {
-    //             props.unFollow(props.users.id)
-    //         }
-    //     })
-    // }
 
     return <div className={classes.usersPage}>
 
-        {/*<p className={classes.users}>Users</p>*/}
         {!props.isFetching ? <div>
             <div>
                 {pages.map(p => {
@@ -60,7 +39,7 @@ let Users = (props) => {
                 </div>
                 <div>
                     {user.followed ? <button disabled={props.followingInProgress.some(id => id === user.id)}
-                                             onClick={ () => {props.unfollow(user.id)}}>Unfollow</button> :
+                                             onClick={ () => {props.unFollow(user.id)}}>Unfollow</button> :
                         <button disabled={props.followingInProgress.some(id => id === user.id)}
                                 onClick={ () =>{props.follow(user.id)}
                         }>Follow</button>}

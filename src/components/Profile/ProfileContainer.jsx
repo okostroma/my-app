@@ -1,17 +1,14 @@
 import React from "react";
-import * as axios from "axios";
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {
     getProfileThunk,
     getStatusThunk,
-    setUserProfileActionCreator,
     updateStatusThunk
 } from "../../redux/profileReducer";
-import {Redirect, withRouter} from "react-router-dom";
-import {profileAPI} from "../../api/api";
-import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import { withRouter} from "react-router-dom";
 import {compose} from "redux";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 
 class ProfileContainer extends React.Component {
@@ -20,11 +17,14 @@ class ProfileContainer extends React.Component {
     componentDidMount() {
         let userId = this.props.match.params.userId;
         if (!userId) {
-            userId = 8278;
+            userId = this.props.authUserId;
+            if (!userId) {
+                this.props.history.put('/login')
+
+            }
         }
-        // profileAPI.getProfile(userId).then(data => {
-        //     this.props.setUserProfileActionCreator(data)
-        // })
+
+
 
         this.props.getProfileThunk(userId);
         this.props.getStatusThunk(userId)
@@ -43,25 +43,16 @@ class ProfileContainer extends React.Component {
 }
 
 
-// const mapStateToPropsRedirect = (state) => ({
-//     isAuth: state.auth.isAuth
-// })
-//
-//
-//
-// AuthRedirectComponent = connect(mapStateToPropsRedirect) (AuthRedirectComponent)
-
 
 const mapStateToProps = (state) => ({
     profile: state.profileReducer.profile,
-    status: state.profileReducer.status
+    status: state.profileReducer.status,
+    authUserId: state.auth.id,
+    isAuth: state.auth.isAuth
 
 })
 
-//
-// let AuthRedirectComponent = withAuthRedirect(ProfileContainer)
-//
-// let withURLContainerComponent =  withRouter(AuthRedirectComponent);
+
 
 export default compose(connect(mapStateToProps, {getProfileThunk, getStatusThunk, updateStatusThunk}), withRouter, withAuthRedirect) (ProfileContainer);
 
