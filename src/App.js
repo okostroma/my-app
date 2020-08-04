@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from "./components/Nav/Nav.jsx";
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import { HashRouter, Route, withRouter} from "react-router-dom";
 //import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 //import ProfileContainer from "./components/Profile/ProfileContainer";
@@ -58,11 +58,11 @@ const mapStateToProps = (state) => {
 const AppContainer = compose(withRouter, connect(mapStateToProps, {initialise}))(App);
 
 const MainApp = (props) => {
-    return <BrowserRouter basename={process.env.PUBLIC_URL}>
+    return <HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default MainApp;
