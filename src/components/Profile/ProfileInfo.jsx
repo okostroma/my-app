@@ -3,6 +3,7 @@ import classes from './ProfileInfo.module.css'
 import PreLoader from "../Preloader/PreLoader";
 import done from './done.png'
 import undone from './undone.jpg';
+import user from '../../assets/img/user.png';
 
 
 class ProfileInfo extends React.Component {
@@ -15,7 +16,6 @@ class ProfileInfo extends React.Component {
     isOnEditMode = () => {
         this.setState({
             isEditMode: true
-            // status: this.props.status
         })
     }
 
@@ -47,17 +47,16 @@ class ProfileInfo extends React.Component {
             return <PreLoader />
         }
         return (<div>
-                <div className={classes.mainPic}>
+                {/*<div className={classes.mainPic}>*/}
 
-                </div>
+                {/*</div>*/}
                 <div className={classes.info}>
                     <img className={classes.avatar}
-                         src={this.props.profile.photos.large}/>
+                         src={this.props.profile.photos.large || user}/>
                     <div className={classes.profileInfo}>
                         <div>{this.props.profile.fullName}</div>
-                        {/*<div>{this.props.status}</div>*/}
                         {this.state.isEditMode ? <input onChange={this.changeStatus} autoFocus={true} onBlur={this.onBlur} value={this.state.status}/> :
-                            <div onDoubleClick={this.isOnEditMode}>{this.props.status || '-------'}</div> }
+                            <span onDoubleClick={this.isOnEditMode}>{this.props.status || '-------'}</span> }
 
                         <div onDoubleClick={this.isOnEditMode}>{this.props.profile.aboutMe}</div>
 

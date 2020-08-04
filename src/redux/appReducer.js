@@ -1,7 +1,7 @@
 
-import {isOnAuth, setAuthUserData} from "./authReducer";
+import {isOnAuth} from "./authReducer";
 
-const IS_INITIALIZED = 'IS_INITIALIZED'
+const IS_INITIALIZED = 'APP_REDUCER/IS_INITIALIZED'
 
 let initialState = {
     initialized: false
@@ -21,13 +21,12 @@ const appReducer = (state = initialState, action) => {
 
     }
 
-}
+};
 
 export const isInitialized = () => ({type: IS_INITIALIZED})
 
 export const initialise = () => {
     return (dispatch) => {
-        debugger
         dispatch(isOnAuth()).then(()=> {
             dispatch(isInitialized())
         })

@@ -1,5 +1,5 @@
 
-const SEND_MESSAGE = 'SEND-MESSAGE';
+const SEND_MESSAGE = 'DIALOGS_REDUCER/SEND-MESSAGE';
 
 let initialState = {
     dialogs: [
@@ -19,9 +19,6 @@ let initialState = {
 
 const dialogsReducer = (state = initialState, action) => {
 
-    // let stateCopy;
-
-
     switch (action.type) {
 
         case SEND_MESSAGE:
@@ -31,7 +28,6 @@ const dialogsReducer = (state = initialState, action) => {
                 newMessageText: '',
                 messages: [...state.messages, {id: 5, message: newMessage} ]
             }
-            // return stateCopy;
 
         default:
             return state;

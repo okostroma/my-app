@@ -3,6 +3,7 @@ import classes from './ProfileInfo.module.css'
 import PreLoader from "../Preloader/PreLoader";
 import done from './done.png'
 import undone from './undone.jpg';
+import user from '../../assets/img/user.png';
 
 
 const ProfileInfoWithHooks = (props) => {
@@ -32,12 +33,12 @@ const ProfileInfoWithHooks = (props) => {
         return <PreLoader/>
     }
     return (<div>
-            <div className={classes.mainPic}>
+            {/*<div className={classes.mainPic}>*/}
 
-            </div>
+            {/*</div>*/}
             <div className={classes.info}>
                 <img className={classes.avatar}
-                     src={props.profile.photos.large}/>
+                     src={props.profile.photos.large || user}/>
                 <div className={classes.profileInfo}>
                     <div>{props.profile.fullName}</div>
                     {/*<div>{this.props.status}</div>*/}

@@ -3,7 +3,7 @@ import * as axios from "axios";
 const instance = axios.create({
         withCredentials: true,
         baseURL: 'https://social-network.samuraijs.com/api/1.0/',
-        headers: {'API-KEY': 'f0e08188-8253-43c0-9ba4-c5828ee19e1e'}
+        headers: {'API-KEY': 'bb8f8084-21b5-4fee-a3b3-12a4d9a130ba'}
     }
 )
 

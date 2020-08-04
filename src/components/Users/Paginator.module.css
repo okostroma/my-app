@@ -1,0 +1,20 @@
+.selectedPage {
+    font-weight: bolder;
+}
+.page {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginator button {
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
