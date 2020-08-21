@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.3f708cff.chunk.css",
-    "main.js": "/my-app/static/js/main.5b91a5ba.chunk.js",
-    "main.js.map": "/my-app/static/js/main.5b91a5ba.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.9bc39cb2.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.9bc39cb2.js.map",
-    "static/js/2.57af3b98.chunk.js": "/my-app/static/js/2.57af3b98.chunk.js",
-    "static/js/2.57af3b98.chunk.js.map": "/my-app/static/js/2.57af3b98.chunk.js.map",
-    "static/css/3.24f0a22c.chunk.css": "/my-app/static/css/3.24f0a22c.chunk.css",
-    "static/js/3.245d39e9.chunk.js": "/my-app/static/js/3.245d39e9.chunk.js",
-    "static/js/3.245d39e9.chunk.js.map": "/my-app/static/js/3.245d39e9.chunk.js.map",
+    "main.js": "/my-app/static/js/main.76118fd9.chunk.js",
+    "main.js.map": "/my-app/static/js/main.76118fd9.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.deedeed3.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.deedeed3.js.map",
+    "static/js/2.58cca8b1.chunk.js": "/my-app/static/js/2.58cca8b1.chunk.js",
+    "static/js/2.58cca8b1.chunk.js.map": "/my-app/static/js/2.58cca8b1.chunk.js.map",
+    "static/css/3.dc7a4014.chunk.css": "/my-app/static/css/3.dc7a4014.chunk.css",
+    "static/js/3.1adf0b6b.chunk.js": "/my-app/static/js/3.1adf0b6b.chunk.js",
+    "static/js/3.1adf0b6b.chunk.js.map": "/my-app/static/js/3.1adf0b6b.chunk.js.map",
     "static/css/4.781b9db7.chunk.css": "/my-app/static/css/4.781b9db7.chunk.css",
     "static/js/4.5915b2d5.chunk.js": "/my-app/static/js/4.5915b2d5.chunk.js",
     "static/js/4.5915b2d5.chunk.js.map": "/my-app/static/js/4.5915b2d5.chunk.js.map",
     "index.html": "/my-app/index.html",
-    "precache-manifest.ab3bf4459f7b3583b55d5d80146dffc1.js": "/my-app/precache-manifest.ab3bf4459f7b3583b55d5d80146dffc1.js",
+    "precache-manifest.89b444f6fa9d032e1fdae219933fbfde.js": "/my-app/precache-manifest.89b444f6fa9d032e1fdae219933fbfde.js",
     "service-worker.js": "/my-app/service-worker.js",
-    "static/css/3.24f0a22c.chunk.css.map": "/my-app/static/css/3.24f0a22c.chunk.css.map",
+    "static/css/3.dc7a4014.chunk.css.map": "/my-app/static/css/3.dc7a4014.chunk.css.map",
     "static/css/4.781b9db7.chunk.css.map": "/my-app/static/css/4.781b9db7.chunk.css.map",
     "static/css/main.3f708cff.chunk.css.map": "/my-app/static/css/main.3f708cff.chunk.css.map",
-    "static/js/2.57af3b98.chunk.js.LICENSE.txt": "/my-app/static/js/2.57af3b98.chunk.js.LICENSE.txt",
+    "static/js/2.58cca8b1.chunk.js.LICENSE.txt": "/my-app/static/js/2.58cca8b1.chunk.js.LICENSE.txt",
     "static/media/ava.png": "/my-app/static/media/ava.adf3f16b.png",
     "static/media/avaMessage.png": "/my-app/static/media/avaMessage.adf3f16b.png",
     "static/media/avatar.png": "/my-app/static/media/avatar.adf3f16b.png",
@@ -29,9 +29,9 @@
     "static/media/user.png": "/my-app/static/media/user.93a57c9f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bc39cb2.js",
-    "static/js/2.57af3b98.chunk.js",
+    "static/js/runtime-main.deedeed3.js",
+    "static/js/2.58cca8b1.chunk.js",
     "static/css/main.3f708cff.chunk.css",
-    "static/js/main.5b91a5ba.chunk.js"
+    "static/js/main.76118fd9.chunk.js"
   ]
 }
