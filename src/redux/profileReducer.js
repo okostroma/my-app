@@ -3,7 +3,8 @@ import {profileAPI} from "../api/api";
 const ADD_POST = 'PROFILE_REDUCER/ADD-POST';
 const SET_USER_PROFILE = 'PROFILE_REDUCER/SET-USER-PROFILE';
 const GET_USER_STATUS = 'PROFILE_REDUCER/GET_USER_STATUS';
-const DELETE_POST = 'PROFILE_REDUCER/DELETE_POST'
+const DELETE_POST = 'PROFILE_REDUCER/DELETE_POST';
+const SET_PHOTOS = 'PROFILE_REDUCER/SET_PHOTOS';
 
 
 
@@ -47,6 +48,12 @@ const profileReducer = (state = initialState, action) => {
                 ...state, posts: state.posts.filter(p => p.id !== action.postId)
             }
         }
+        case SET_PHOTOS: {
+            debugger
+            return {
+                ...state, profile: {...state.profile, photos: action.photos}
+            }
+        }
         default:
             return state;
 
@@ -60,6 +67,7 @@ export const setUserProfileActionCreator = (profile) => ({type: SET_USER_PROFILE
 
 export const getUserStatusActionCreator = (status) => ({type: GET_USER_STATUS, status});
 export const deletePostActionCreator = (postId) => ({type: DELETE_POST, postId});
+export const setPhotoActionCreator = (photos) => ({type: SET_PHOTOS, photos});
 
 
 export const getProfileThunk = (userId) => {
@@ -83,7 +91,18 @@ export const updateStatusThunk = (status) => {
             if (data.resultCode === 0) {
                 dispatch(getUserStatusActionCreator(status))
             }
-    }
+}
+};
+export const setPhotosThunk = (file) => {
+
+    return async (dispatch) => {
+        debugger
+        let data = await profileAPI.savePhoto(file);
+            if (data.resultCode === 0) {
+                debugger
+                dispatch(setPhotoActionCreator(data.data.photos))
+            }
+}
 };
 
 export default profileReducer;

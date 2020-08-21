@@ -3,7 +3,7 @@ import classes from './Users.module.css'
 import userPhoto from '../../assets/img/user.png'
 import {NavLink} from "react-router-dom";
 
-let User = (props) => {
+const User = (props) => {
 
     return (<div className={classes.userItem}>
         <div className={classes.userBlock}>

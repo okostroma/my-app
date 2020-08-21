@@ -3,6 +3,7 @@ const getAllUsers = (state) => {
     return state.usersReducer.users
 }
 export const getAllUsersSelector = createSelector(getAllUsers,(users) => {
+    debugger
      return users.filter(u => true)
 })
 

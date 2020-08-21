@@ -28,6 +28,13 @@ const ProfileInfoWithHooks = (props) => {
         props.updateStatus(status)
     }
 
+    const onAvatarChanged = (e) => {
+        if(e.target.files.length) {
+           props.savePhoto(e.target.files[0])
+        }
+    }
+
+
 
     if (!props.profile) {
         return <PreLoader/>
@@ -37,8 +44,13 @@ const ProfileInfoWithHooks = (props) => {
 
             {/*</div>*/}
             <div className={classes.info}>
+                <div className={classes.avaBlock}>
                 <img className={classes.avatar}
                      src={props.profile.photos.large || user}/>
+                {props.isOwner && <div><input className={classes.changeAvaButton} id='file' type='file' onChange={onAvatarChanged}/>
+                    </div>}
+                </div>
+
                 <div className={classes.profileInfo}>
                     <div>{props.profile.fullName}</div>
                     {/*<div>{this.props.status}</div>*/}

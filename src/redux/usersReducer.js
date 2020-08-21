@@ -23,15 +23,17 @@ let initialState = {
 const usersReducer = (state = initialState, action) => {
     switch (action.type) {
         case FOLLOW:
+            debugger
             return {
                 ...state,
-                users: updateObjectInArray(state.users, action.id, 'id', {followed: true})
+                users: updateObjectInArray(state.users, action.userId, 'id', {followed: true})
             }
 
         case UNFOLLOW:
+            debugger
             return {
                 ...state,
-                users: updateObjectInArray(state.users, action.id, 'id', {followed: false})
+                users: updateObjectInArray(state.users, action.userId, 'id', {followed: false})
             }
         case SET_USERS: {
             return {...state, users: [...action.users]}

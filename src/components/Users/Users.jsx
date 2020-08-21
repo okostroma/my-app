@@ -3,7 +3,7 @@ import classes from './Users.module.css'
 import Paginator from "./Paginator";
 import User from "./User";
 
-let Users = (props) => {
+const Users = (props) => {
 
     return (<div className={classes.usersPage}>
 

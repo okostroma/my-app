@@ -1,7 +1,7 @@
 
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    /*height: 300px;*/
 }
 .info {
     margin: 10px;
@@ -28,4 +28,11 @@
 
 .profileInfo {
     margin-left: 10px;
+}
+.avaBlock {
+    display: flex;
+    flex-direction: column;
+}
+.changeAvaButton {
+    margin-top: 10px;
 }

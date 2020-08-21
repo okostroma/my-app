@@ -14,7 +14,11 @@ const Profile = (props) => {
     return (
         <div className={classes.content}>
 
-            <ProfileInfoWithHooks status={props.status} profile={props.profile} updateStatus={props.updateStatus}/>
+            <ProfileInfoWithHooks savePhoto={props.savePhoto}
+                                  isOwner={props.isOwner}
+                                  status={props.status}
+                                  profile={props.profile}
+                                  updateStatus={props.updateStatus}/>
             <MyPostsContainer />
 
 

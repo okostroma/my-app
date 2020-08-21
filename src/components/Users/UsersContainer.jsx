@@ -8,8 +8,7 @@ import {
 import Users from "./Users";
 import PreLoader from "../Preloader/PreLoader";
 import {compose} from "redux";
-import {
-    getAllUsers, getAllUsersSelector,
+import {getAllUsersSelector,
     getCurrentPage,
     getFollowingInProgress,
     getIsFetching,
